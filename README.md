@@ -21,7 +21,7 @@ end
 imshow(rgbImage)
 ```
 
-
+# Original Image
 ![figure_0.png](traffic_sign_detection_images/figure_0.png)
 
 
@@ -48,7 +48,7 @@ caption = sprintf('Mask of Only\nThe Red Objects');
 title(caption, 'FontSize', fontSize);
 ```
 
-
+# Mask after Color Thresholding
 ![figure_1.png](traffic_sign_detection_images/figure_1.png)
 
 
@@ -67,6 +67,7 @@ caption = sprintf('bwareaopen() removed objects\nsmaller than %d pixels', smalle
 title(caption, 'FontSize', fontSize);
 ```
 
+# Mask after removing objects smaller than 100px in area
 
 ![figure_2.png](traffic_sign_detection_images/figure_2.png)
 
@@ -88,7 +89,7 @@ fontSize = 16;
 title('Border smoothed', 'FontSize', fontSize);
 ```
 
-
+# Mask after Borders Smoothening
 ![figure_3.png](traffic_sign_detection_images/figure_3.png)
 
 
@@ -103,6 +104,7 @@ imshow(redObjectsMask, []);
 title('Regions Filled', 'FontSize', fontSize);
 ```
 
+# Fill in any holes in the regions, since they are most likely red also.
 
 ![figure_4.png](traffic_sign_detection_images/figure_4.png)
 
@@ -126,7 +128,7 @@ caption = sprintf('Masked Original Image\nShowing Only the Red Objects');
 title(caption, 'FontSize', fontSize);
 ```
 
-
+#  Show the masked off, original image.
 ![figure_5.png](traffic_sign_detection_images/figure_5.png)
 
 
@@ -297,6 +299,7 @@ bwCircularities = 0.6961
 thisCircularity = 0.6961
 ```
 
+# Region of Interest Bounding Box and Shape prediction
 
 ![figure_6.png](traffic_sign_detection_images/figure_6.png)
 
