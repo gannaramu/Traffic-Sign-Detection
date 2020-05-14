@@ -21,7 +21,7 @@ end
 imshow(rgbImage)
 ```
 
-
+# Original Image
 ![figure_0.png](traffic_sign_detection_images/figure_0.png)
 
 
